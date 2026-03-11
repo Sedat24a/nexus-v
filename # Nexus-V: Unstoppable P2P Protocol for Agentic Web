@@ -1,0 +1,30 @@
+# Nexus-V
+> *Decentralized P2P Infrastructure for Agentic Browsing.*
+
+**Nexus-V** is an autonomous media protocol designed to bypass centralized web constraints. We decouple agentic workflows from API-dependent guardrails by merging **IPFS** for storage and **P2P routing** for traffic.
+
+---
+
+### Why Nexus-V?
+Current agentic browsers rely on centralized API endpoints (like Claude/OpenAI) that are prone to censorship and safety-driven hallucinations. Nexus-V introduces:
+* **Protocol-Level Agnosticism:** Native integration with [ABP (Agent Browser Protocol)](https://github.com/theredsix/agent-browser-protocol).
+* **Zero-Trust Routing:** IPFS-backed storage for immutable content delivery.
+* **Autonomous Fallback:** Modular `ActionPlanner` interface to switch between API-based and local-model execution.
+
+### The Stack
+- **Networking:** `libp2p` (peer discovery + NAT traversal).
+- **Storage:** `IPFS` (content-addressed media blocks).
+- **Agentic Engine:** Chromium-level automation (ABP compliant).
+- **Integrity:** Edge-based `AI-Polygraph` for real-time tampering detection.
+
+### Development Status
+* **Phase 1: Routing** [IN-PROGRESS] - Establishing the P2P backbone.
+* **Phase 2: Agentic Layer** [PLANNED] - ABP orchestration and async state machines.
+* **Phase 3: Verification** [PLANNED] - Edge-polygraph integration.
+
+### Contributing
+This is an engineering-first protocol. We don't merge fluff. 
+- If you're tackling **libp2p** latency, check `ROADMAP.md`.
+- If you're building **Chromium-based** engine integrations, open a technical `Issue`.
+
+*Status: Alpha // Open for Protocol Architects.*
